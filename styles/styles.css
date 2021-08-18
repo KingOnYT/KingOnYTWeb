@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,800);
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-image: linear-gradient(to right, aqua, purple);
+}
+.logo {
+  color: white;
+  font-size: xx-large;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 22px;
+}
+
+.nav-links {
+  list-style: none;
+  color: white;
+  font-size: xx-large;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.nav-links a {
+  color: rgb(266, 226, 226);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 12px;
+}
+.nav-links:hover a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 12px;
+  transition: 0.5s;
+}
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+
+  background: rgb(236, 240, 241);
+}
+
+section.container {
+  min-width: 500px;
+  margin: 10% auto;
+  text-align: center;
+}
+a:hover {
+  border-bottom: 5px solid white;
+}
+h1 {
+  font-size: 2em;
+  padding: 20px 0;
+}
+p {
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 20px 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+button {
+  background: transparent;
+  outline: none;
+  position: relative;
+  border: 2px solid #111;
+  padding: 15px 50px;
+  overflow: hidden;
+}
+
+/*button:before (attr data-hover)*/
+button:hover:before {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+button:before {
+  content: attr(data-hover);
+  position: absolute;
+  top: 1.1em;
+  left: 0;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 800;
+  font-size: 0.8em;
+  opacity: 0;
+  transform: translate(-100%, 0);
+  transition: all 0.3s ease-in-out;
+}
+/*button div (button text before hover)*/
+button:hover div {
+  opacity: 0;
+  transform: translate(100%, 0);
+}
+button div {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 800;
+  font-size: 0.8em;
+  transition: all 0.3s ease-in-out;
+}
+
+.container {
+  position: relative;
+  width: 1200px;
+  height: 300px;
+  margin: 240px auto;
+}
+.container .box {
+  position: relative;
+  width: calc(400px - 30px);
+  height: calc(300px - 30px);
+  background: white;
+  float: left;
+  margin: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 13px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container .box .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: aqua;
+  transition: 0.5s;
+  z-index: 1;
+}
+.container .box:hover .icon {
+  top: 20px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.lol {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.container .box:hover .lol {
+  font-size: 0;
+  transition: 0.5s;
+}
+
+.container .box .content {
+  position: absolute;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  top: 120px;
+  box-sizing: border-box;
+}
+.space {
+  width: 100%;
+  height: 200px;
+}
+
+.line {
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 10px;
+  background: aqua;
+  border-radius: 20%;
+}
+.normal {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  text-decoration: none;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #111;
+}
